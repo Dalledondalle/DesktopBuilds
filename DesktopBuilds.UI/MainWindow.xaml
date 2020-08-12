@@ -1,0 +1,24 @@
+﻿<Window x:Class="DesktopBuilds.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopBuilds.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="5,5,5,5"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button Content="New CPU" Click="NewCPU_Click"/>
+            <Button Content="New Graphic Card" Click="NewGraphicCard_Click"/>
+            <Button Content="New Ram" Click="NewRAM_Click"/>
+            <Button Content="New Motherboard" Click="NewMotherboard_Click"/>
+            <Button Content="New Desktop" Click="NewDesktop_Click"/>
+            <Button Content="Edit Component" Click="EditComponent_Click"/>
+        </StackPanel>        
+    </Grid>
+</Window>

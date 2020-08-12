@@ -1,0 +1,45 @@
+﻿<Window x:Class="DesktopBuilds.UI.EditCPU"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopBuilds.UI"
+        mc:Ignorable="d"
+        Title="EditCPU" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="0" HorizontalAlignment="Right">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Margin" Value="5,5,5,5"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Manufacturer"/>
+            <TextBlock Text="Component Name"/>
+            <TextBlock Text="Default Frequency(x,x GHz)"/>
+            <TextBlock Text="Max Frequency(x,x GHz)"/>
+            <TextBlock Text="Cache"/>
+            <TextBlock Text="OBS: This window closes aftersuccesfully updating a CPU" TextWrapping="Wrap" Width="150" FontWeight="Bold"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Margin" Value="5,5,5,3"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBox Width="150" Text="{Binding Manufacturer, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="150" Text="{Binding CPUName, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="150" Text="{Binding DefaultFrequency, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="150" Text="{Binding MaxFrequency, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Width="150" Text="{Binding Cache, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+        <Button Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Content="Edit CPU" VerticalAlignment="Top" HorizontalAlignment="Center" Click="EditCPU_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,148 @@
+﻿<Window x:Class="DesktopBuilds.UI.MakeDesktop"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopBuilds.UI"
+        mc:Ignorable="d"
+        Title="MakeDesktop" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <ComboBox ItemsSource="{Binding CPUs}" HorizontalAlignment="Center" MinWidth="120" SelectedItem="{Binding SelectedCPU, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Grid DataContext="{Binding SelectedCPU, UpdateSourceTrigger=PropertyChanged}">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                        <TextBlock Text="Manufacturer: "/>
+                        <TextBlock Text="Component: "/>
+                        <TextBlock Text="Defualt Frequency(GHz): "/>
+                        <TextBlock Text="Max Frequency(GHz): "/>
+                        <TextBlock Text="Cache(MB): "/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Path=Manufacturer}"/>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                        <TextBlock Text="{Binding Path=DefaultFrequency}"/>
+                        <TextBlock Text="{Binding Path=MaxFrequency}"/>
+                        <TextBlock Text="{Binding Path=Cache}"/>
+                    </StackPanel>
+                </StackPanel>
+
+            </Grid>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <ComboBox ItemsSource="{Binding Motherboards}" HorizontalAlignment="Center" MinWidth="120" SelectedItem="{Binding SelectedMotherboard, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Grid DataContext="{Binding SelectedMotherboard, UpdateSourceTrigger=PropertyChanged}">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                        <TextBlock Text="Manufacturer: "/>
+                        <TextBlock Text="Component Name: "/>
+                        <TextBlock Text="Socket Type: "/>
+                        <TextBlock Text="Amount of PCI: "/>
+                        <TextBlock Text="Amount of PCI Express 16: "/>
+                        <TextBlock Text="Amount of PCI Express: "/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Path=Manufacturer}"/>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                        <TextBlock Text="{Binding Path=Socket}"/>
+                        <TextBlock Text="{Binding Path=PCICount}"/>
+                        <TextBlock Text="{Binding Path=PCIEx16Count}"/>
+                        <TextBlock Text="{Binding Path=PCIExCount}"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="0" Grid.Column="2">
+            <ComboBox ItemsSource="{Binding Memories}" HorizontalAlignment="Center" MinWidth="120" SelectedItem="{Binding SelectedMemory, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Path=Name}"/>
+                            <TextBlock Text=" - "/>
+                            <TextBlock Text="{Binding Path=Capacity}"/>
+                            <TextBlock Text=" MB"/>
+                        </StackPanel>
+
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Grid DataContext="{Binding SelectedMemory, UpdateSourceTrigger=PropertyChanged}">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                        <TextBlock Text="Manufacturer: "/>
+                        <TextBlock Text="Component Name: "/>
+                        <TextBlock Text="Capacity: "/>
+                        <TextBlock Text="Generation: "/>
+                        <TextBlock Text="Frequency: "/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Path=Manufacturer}"/>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                        <TextBlock Text="{Binding Path=Capacity}"/>
+                        <TextBlock Text="{Binding Path=Generation}"/>
+                        <TextBlock Text="{Binding Path=Frequency}"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        
+        <StackPanel Grid.Row="0" Grid.Column="3">
+            <ComboBox ItemsSource="{Binding GraphicCards}" HorizontalAlignment="Center" MinWidth="120" SelectedItem="{Binding SelectedGraphicCard, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Grid DataContext="{Binding SelectedGraphicCard, UpdateSourceTrigger=PropertyChanged}">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                        <TextBlock Text="Manufacturer: "/>
+                        <TextBlock Text="Component Name: "/>
+                        <TextBlock Text="Memory: "/>
+                        <TextBlock Text="Generation: "/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Path=Manufacturer}"/>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                        <TextBlock Text="{Binding Path=Memory}"/>
+                        <TextBlock Text="{Binding Path=Frequency}"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" VerticalAlignment="Center">
+            <TextBlock Text="New Desktop's name:" Margin="10,0,0,0"/>
+            <TextBox Text="{Binding DesktopName, UpdateSourceTrigger=PropertyChanged}" MinWidth="120" Margin="10,0,10,0"/>
+            <Button Content="Add new Desktop" Click="AddNewDesktop_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

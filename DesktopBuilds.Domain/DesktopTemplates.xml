@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfDesktop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Desktop>
+    <Name>MaxGaming</Name>
+    <Motherboard>
+      <Name>Xtreme Rog</Name>
+      <Manufacturer>Asus</Manufacturer>
+      <Socket>LG2342</Socket>
+      <PCIEx16Count>2</PCIEx16Count>
+      <PCIExCount>1</PCIExCount>
+      <PCICount>1</PCICount>
+    </Motherboard>
+    <CPU>
+      <Name>i9900x</Name>
+      <Manufacturer>Intel</Manufacturer>
+      <DefaultFrequency>4.0</DefaultFrequency>
+      <MaxFrequency>5.2</MaxFrequency>
+      <Cache>16</Cache>
+    </CPU>
+    <GraphicCard>
+      <Name>Geforce 2080 TI</Name>
+      <Manufacturer>Nvidia
+      </Manufacturer>
+      <Memory>
+        16000
+      </Memory>
+      <Frequency>
+        3666
+      </Frequency>
+    </GraphicCard>
+
+    <Ram>
+      <Name>
+        4* Vengeance RGB Pro
+      </Name>
+      <Manufacturer>
+        Corsair
+      </Manufacturer>
+      <Capacity>
+        8000
+      </Capacity>
+      <Frequency>
+        3200
+      </Frequency>
+      <Generation>
+        DDR4
+      </Generation>
+    </Ram>
+  </Desktop>
+
+  <Desktop>
+    <Name>BudgetGaming</Name>
+
+    <Motherboard>
+      <Name>
+        LowKeyGaming
+      </Name>
+      <Manufacturer>
+        Gigabyte
+      </Manufacturer>
+      <Socket>
+        LG42342
+      </Socket>
+      <PCIEx16Count>
+        1
+      </PCIEx16Count>
+      <PCIExCount>
+        1
+      </PCIExCount>
+      <PCICount>
+        1
+      </PCICount>
+    </Motherboard>
+
+    <CPU>
+      <Name>
+        i8700
+      </Name>
+      <Manufacturer>
+        Intel
+      </Manufacturer>
+      <DefaultFrequency>
+        3.0
+      </DefaultFrequency>
+      <MaxFrequency>
+        3.5
+      </MaxFrequency>
+      <Cache>
+        16
+      </Cache>
+    </CPU>
+
+    <GraphicCard>
+      <Name>
+        Geforce 1060
+      </Name>
+      <Manufacturer>
+        Gigabyte
+      </Manufacturer>
+      <Memory>
+        3000
+      </Memory>
+      <Frequency>
+        1600
+      </Frequency>
+    </GraphicCard>
+
+    <Ram>
+      <Name>
+        2*HyperX Fury
+      </Name>
+      <Manufacturer>
+        Kingston
+      </Manufacturer>
+      <Capacity>
+        2000
+      </Capacity>
+      <Frequency>
+        2133
+      </Frequency>
+      <Generation>
+        DDR4
+      </Generation>
+    </Ram>
+  </Desktop>
+
+  <Desktop>
+    <Name>Office3000</Name>
+
+    <Motherboard>
+      <Name>
+        Dell
+      </Name>
+      <Manufacturer>
+        Studio2
+      </Manufacturer>
+      <Socket>
+        LG2342
+      </Socket>
+      <PCIEx16Count>
+        1
+      </PCIEx16Count>
+      <PCIExCount>
+        0
+      </PCIExCount>
+      <PCICount>
+        0
+      </PCICount>
+    </Motherboard>
+
+    <CPU>
+      <Name>
+        i7 7820HQ
+      </Name>
+      <Manufacturer>
+        Intel
+      </Manufacturer>
+      <DefaultFrequency>
+        2.9
+      </DefaultFrequency>
+      <MaxFrequency>
+        3.9
+      </MaxFrequency>
+      <Cache>
+        8
+      </Cache>
+    </CPU>
+
+    <GraphicCard>
+      <Name>
+        GTX 1070
+      </Name>
+      <Manufacturer>
+        Nvidia
+      </Manufacturer>
+      <Memory>
+        8000
+      </Memory>
+      <Frequency>
+        1900
+      </Frequency>
+    </GraphicCard>
+
+    <Ram>
+      <Name>
+        2* HyperX Fury
+      </Name>
+      <Manufacturer>
+        Kingston
+      </Manufacturer>
+      <Capacity>
+        8000
+      </Capacity>
+      <Frequency>
+        2666
+      </Frequency>
+      <Generation>
+        DDR4
+      </Generation>
+    </Ram>
+  </Desktop>
+
+  <Desktop>
+    <Name>MyPersonal</Name>
+
+    <Motherboard>
+      <Name>
+        Rog Strix Gaming
+      </Name>
+      <Manufacturer>
+        Asus
+      </Manufacturer>
+      <Socket>
+        LG12342
+      </Socket>
+      <PCIEx16Count>
+        1
+      </PCIEx16Count>
+      <PCIExCount>
+        3
+      </PCIExCount>
+      <PCICount>
+        0
+      </PCICount>
+    </Motherboard>
+
+    <CPU>
+      <Name>
+        I9 9900k
+      </Name>
+      <Manufacturer>
+        Intel
+      </Manufacturer>
+      <DefaultFrequency>
+        4.0
+      </DefaultFrequency>
+      <MaxFrequency>
+        5.0
+      </MaxFrequency>
+      <Cache>
+        16
+      </Cache>
+    </CPU>
+
+    <GraphicCard>
+      <Name>
+        GTX 1080
+      </Name>
+      <Manufacturer>
+        EVGA
+      </Manufacturer>
+      <Memory>
+        8000
+      </Memory>
+      <Frequency>
+        2230
+      </Frequency>
+    </GraphicCard>
+
+    <Ram>
+      <Name>
+        2* Micron
+      </Name>
+      <Manufacturer>
+        Ballistix
+      </Manufacturer>
+      <Capacity>
+        8000
+      </Capacity>
+      <Frequency>
+        2666
+      </Frequency>
+      <Generation>
+        DDR4
+      </Generation>
+    </Ram>
+  </Desktop>
+
+  <Desktop>
+    <Name>RenderingMachine</Name>
+
+    <Motherboard>
+      <Name>
+        iMac Pro
+      </Name>
+      <Manufacturer>
+        Apple
+      </Manufacturer>
+      <Socket>
+        LG2321
+      </Socket>
+      <PCIEx16Count>
+        1
+      </PCIEx16Count>
+      <PCIExCount>
+        1
+      </PCIExCount>
+      <PCICount>
+        1
+      </PCICount>
+    </Motherboard>
+
+    <CPU>
+      <Name>
+        Xeon W
+      </Name>
+      <Manufacturer>
+        Intel
+      </Manufacturer>
+      <DefaultFrequency>
+        3.0
+      </DefaultFrequency>
+      <MaxFrequency>
+        4.5
+      </MaxFrequency>
+      <Cache>
+        14
+      </Cache>
+    </CPU>
+
+    <GraphicCard>
+      <Name>
+        Vega 64
+      </Name>
+      <Manufacturer>
+        AMD
+      </Manufacturer>
+      <Memory>
+        160000
+      </Memory>
+      <Frequency>
+        2400
+      </Frequency>
+    </GraphicCard>
+
+    <Ram>
+      <Name>
+        4* AppleRam
+      </Name>
+      <Manufacturer>
+        Apple
+      </Manufacturer>
+      <Capacity>
+        32000
+      </Capacity>
+      <Frequency>
+        2666
+      </Frequency>
+      <Generation>
+        DDR4
+      </Generation>
+    </Ram>
+  </Desktop>
+
+  <Desktop>
+    <Name>CheapAF</Name>
+
+    <Motherboard>
+      <Name>
+        GA-B250M
+      </Name>
+      <Manufacturer>
+        Gigabyte
+      </Manufacturer>
+      <Socket>
+        LGA1151
+      </Socket>
+      <PCIEx16Count>
+        1
+      </PCIEx16Count>
+      <PCIExCount>
+        1
+      </PCIExCount>
+      <PCICount>
+        1
+      </PCICount>
+    </Motherboard>
+
+    <CPU>
+      <Name>
+        i5 7500
+      </Name>
+      <Manufacturer>
+        Intel
+      </Manufacturer>
+      <DefaultFrequency>
+        3.4
+      </DefaultFrequency>
+      <MaxFrequency>
+        4.0
+      </MaxFrequency>
+      <Cache>
+        8
+      </Cache>
+    </CPU>
+
+    <GraphicCard>
+      <Name>
+        GTX 660
+      </Name>
+      <Manufacturer>
+        Nvidia
+      </Manufacturer>
+      <Memory>
+        3000
+      </Memory>
+      <Frequency>
+        800
+      </Frequency>
+    </GraphicCard>
+
+    <Ram>
+      <Name>
+        2* EVO POTENZA
+      </Name>
+      <Manufacturer>
+        GeIL
+      </Manufacturer>
+      <Capacity>
+        8000
+      </Capacity>
+      <Frequency>
+        2133
+      </Frequency>
+      <Generation>
+        DDR4
+      </Generation>
+    </Ram>
+  </Desktop>
+</ArrayOfDesktop>
